@@ -1,0 +1,16 @@
+<!-- 
+ On the time element we are using the date pipe to format the dueDate property of the task object. There is documentation
+ on the Angular website that explains how to use the date pipe.
+
+-->
+
+<app-card>
+<article>
+    <h2>{{ task.title }}</h2>
+    <time>{{ task.dueDate | date }}</time>
+    <p>{{ task.summary }}</p>
+    <p class="actions">
+        <button (click)="onCompleteTask()">Complete</button>
+    </p>
+</article>
+</app-card>
